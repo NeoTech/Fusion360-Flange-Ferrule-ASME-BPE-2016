@@ -1,18 +1,12 @@
 # Here you define the commands that will be added to your add-in.
 
-# TODO Import the modules corresponding to the commands you created.
-# If you want to add an additional command, duplicate one of the existing directories and import it here.
-# You need to use aliases (import "entry" as "my_module") assuming you have the default module named "entry".
+# The ferrule generator command. The palette sample commands were removed as
+# they are not part of this feature.
 from .commandDialog import entry as commandDialog
-from .paletteShow import entry as paletteShow
-from .paletteSend import entry as paletteSend
 
-# TODO add your imported modules to this list.
 # Fusion will automatically call the start() and stop() functions.
 commands = [
     commandDialog,
-    paletteShow,
-    paletteSend
 ]
 
 
